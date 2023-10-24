@@ -7,6 +7,20 @@ Route::get('webcam', [WebcamController::class, 'index']);
 
 Route::post('webcam', [WebcamController::class, 'store'])->name('webcam.capture');
 
+
+Route::view('/login',"login")->name('login');
+
+Route::view('/regristro',"register")->name('registro');
+
+Route::view('/privada',"secret")->middleware('auth')->name('privada');
+
+Route::post('/validra-registro',[LoginController::class,"register"])->name('validar-registro');
+
+Route::post('/inicia-sesion',[LoginController::class,"login"])->name('inicia-sesion');
+
+Route::get('/logout',[LoginController::class,"logout"])->name('logout');
+
+
 // Registro de Usuarios 
 // Implementar un sistema de registro Nombre,Apellido,Cargo,Hora,grado,Nivel
 
