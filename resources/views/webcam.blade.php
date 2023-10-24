@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>laravel webcam capture image and save from camera - ItSolutionStuff.com</title>
+    <title>laravel webcam captura de imagen</title>
 
     <script src="https://rawgit.com/dwa012/html5-qrcode/master/src/html5-qrcode.min.js"></script>
 
